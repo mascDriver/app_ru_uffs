@@ -1,16 +1,58 @@
-# app_ru_uffs
+<p align="center">
+    <img width="800" src=".github/logo.png" title="Logo do projeto"><br />
+    <img src="https://img.shields.io/maintenance/yes/2022?style=for-the-badge" title="Status do projeto">
+    <img src="https://img.shields.io/github/workflow/status/ccuffs/template/ci.uffs.cc?label=Build&logo=github&logoColor=white&style=for-the-badge" title="Status do build">
+</p>
 
-Aplicativo do cardapio RU UFFS
+# app-ru-uffs
 
-## Getting Started
+Aplicativo criado para facilitar o acesso ao menu de cardápio dos diferentes campus UFFS.
 
-This project is a starting point for a Flutter application.
+> **IMPORTANTE:** Aplicativo em desenvolvimento.
 
-A few resources to get you started if this is your first Flutter project:
+[//]: # (## ✨ Features)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[//]: # ()
+[//]: # (Aqui você pode colocar uma screenshot do produto resultante desse projeto. Descreva também suas features usando uma lista:)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[//]: # ()
+[//]: # (* ✔️ Fácil utilização;)
+
+[//]: # (* 🥢 Poucas dependências;)
+
+[//]: # (* 🎨 Utiliza um template lindo para organizar o `README`;)
+
+[//]: # (* 🖖 Possui ótima documentação e testes.)
+
+## 🚀 Começando
+
+### 1. Primeiro passo para começar
+
+Siga até as [releases do projeto](https://github.com/mascDriver/app_ru_uffs/releases/) e instale em seu android:
+
+
+### 2. Utilização
+
+Selecione o campus desejado e torça para ter seu prato favorito 🖖.
+
+
+## 🤝 Contribua
+
+Sua ajuda é muito bem-vinda, independente da forma! Confira o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/ccuffs/template/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/ccuffs/template/issues/new?assignees=&labels=bug&template=bug_report.md&title=), [enviar um pull request](https://github.com/ccuffs/hacktoberfest/blob/master/docs/tutorial-pull-request.md), ou simplemente utilizar o projeto e comentar sua experiência.
+
+Veja o arquivo [ROADMAP.md](ROADMAP.md) para ter uma ideia de como o projeto deve evoluir.
+
+
+## 🎫 Licença
+
+Esse projeto é licenciado nos termos da licença open-source [MIT](https://choosealicense.com/licenses/mit) e está disponível de graça.
+
+## 🧬 Changelog
+
+Veja todas as alterações desse projeto no arquivo [CHANGELOG.md](CHANGELOG.md).
+
+## 🧪 Projetos utilizados
+
+Este projeto apresenta de forma amigável o cardápio do ru que é adquirido em:
+
+* [apiRuUffs](https://github.com/mascDriver/apiRuUffs)
