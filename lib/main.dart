@@ -1,4 +1,3 @@
-import 'package:app_ru_uffs/http/webclients/cardapios_webclient.dart';
 import 'package:app_ru_uffs/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +11,11 @@ class RuUffsApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         primaryColor: Colors.green[900],
-        accentColor: Colors.blueAccent[700],
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.green[900]
+        ),
         buttonTheme: ButtonThemeData(
-          buttonColor: Colors.blueAccent[700],
+          buttonColor: Colors.green[900],
           textTheme: ButtonTextTheme.primary,
         ),
       ),

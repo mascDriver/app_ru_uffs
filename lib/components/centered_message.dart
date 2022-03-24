@@ -25,7 +25,6 @@ class CenteredMessage extends StatelessWidget {
               icon,
               size: iconSize,
             ),
-            visible: icon != null,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 24.0),

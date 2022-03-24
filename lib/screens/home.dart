@@ -1,4 +1,3 @@
-import 'package:app_ru_uffs/models/cardapio.dart';
 import 'package:app_ru_uffs/screens/cardapios_list.dart';
 import 'package:flutter/material.dart';
 
@@ -18,39 +17,42 @@ class Cardapios extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Image.asset('images/logo_uffs.png'),
           ),
-          Container(
-            height: 120,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 120,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        _FeatureItem(
+                          'Cerro Largo',
+                          Icons.location_on_outlined,
+                          onClick: () => _showCardapiosList(context, 'Cerro Largo'),
+                        ),
+                        _FeatureItem(
+                          'Chapecó',
+                          Icons.location_on_outlined,
+                          onClick: () => _showCardapiosList(context, 'Chapecó'),
+                        ),
                       _FeatureItem(
-                        'Cerro Largo',
-                        Icons.location_on_outlined,
-                        onClick: () => _showCardapiosList(context, 'Cerro Largo'),
-                      ),
-                      _FeatureItem(
-                        'Chapecó',
-                        Icons.location_on_outlined,
-                        onClick: () => _showCardapiosList(context, 'Chapecó'),
-                      ),
-                    _FeatureItem(
-                        'Laranjeiras do Sul',
-                        Icons.location_on_outlined,
-                        onClick: () => _showCardapiosList(context, 'Laranjeiras do Sul'),
-                      ),
-                      _FeatureItem(
-                        'Realeza',
-                        Icons.location_on_outlined,
-                        onClick: () => _showCardapiosList(context, 'Realeza'),
-                      ),
-                    ],
+                          'Laranjeiras do Sul',
+                          Icons.location_on_outlined,
+                          onClick: () => _showCardapiosList(context, 'Laranjeiras do Sul'),
+                        ),
+                        _FeatureItem(
+                          'Realeza',
+                          Icons.location_on_outlined,
+                          onClick: () => _showCardapiosList(context, 'Realeza'),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],

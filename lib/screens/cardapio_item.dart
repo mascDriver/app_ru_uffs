@@ -1,6 +1,3 @@
-import 'package:app_ru_uffs/components/centered_message.dart';
-import 'package:app_ru_uffs/components/progress.dart';
-import 'package:app_ru_uffs/http/webclients/cardapios_webclient.dart';
 import 'package:app_ru_uffs/models/cardapio.dart';
 import 'package:flutter/material.dart';
 
@@ -13,131 +10,41 @@ class CardapioItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cardápio'),
+        title: Text('Cardápio de ${cardapio.dia}'),
       ),
       body: ListView(
         children: <Widget>[
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.salada.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.salada1.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.salada2.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.graos.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.graos1.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.graos2.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.acompanhamento.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.mistura.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.misturaVegana.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Card(
-            child: ListTile(
-              leading: Icon(Icons.food_bank_outlined),
-              title: Text(
-                cardapio.sobremesa.toString(),
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
+          _CardapioItem(cardapio.salada.toString()),
+          _CardapioItem(cardapio.salada1.toString()),
+          _CardapioItem(cardapio.salada2.toString()),
+          _CardapioItem(cardapio.graos1.toString()),
+          _CardapioItem(cardapio.graos2.toString()),
+          _CardapioItem(cardapio.acompanhamento.toString()),
+          _CardapioItem(cardapio.mistura.toString()),
+          _CardapioItem(cardapio.misturaVegana.toString()),
+          _CardapioItem(cardapio.sobremesa.toString())
         ],
+      ),
+    );
+  }
+}
+
+class _CardapioItem extends StatelessWidget {
+  final String item;
+
+  _CardapioItem(this.item);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        leading: Icon(Icons.food_bank_outlined),
+        title: Text(
+          item,
+          style: TextStyle(
+            fontSize: 18.0,
+          ),
+        ),
       ),
     );
   }

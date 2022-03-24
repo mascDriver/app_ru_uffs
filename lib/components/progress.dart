@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Progress extends StatelessWidget{
   final String message;
-  Progress({this.message = 'loading'});
+  Progress({this.message = 'Carregando Cardápio'});
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -12,6 +11,9 @@ class Progress extends StatelessWidget{
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           CircularProgressIndicator(),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+          ),
           Text(message)
         ],
       ),
