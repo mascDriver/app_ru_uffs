@@ -29,3 +29,5 @@ jobs:
         with:
           artifacts: "build/app/outputs/apk/release/*.apk"
           token: ${{ secrets.MY_REPO_SECRET }}
+          commit: master
+          tag: v0.0.${{ github.run_number }}
