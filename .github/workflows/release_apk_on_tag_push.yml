@@ -1,4 +1,4 @@
-name: release_apk_on_tag_push
+name: build
 on:
   push:
     tags :
