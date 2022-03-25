@@ -2,8 +2,8 @@
     package="com.ru.uffs.app_ru_uffs">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="app_ru_uffs"
-        android:icon="@mipmap/ic_launcher">
+        android:label="RU UFFS"
+        android:icon="@mipmap/ic_logo">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
