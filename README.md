@@ -1,7 +1,7 @@
 <p align="center">
     <img width="800" src=".github/logo.png" title="Logo do projeto"><br />
     <img src="https://img.shields.io/maintenance/yes/2022?style=for-the-badge" title="Status do projeto">
-    <a href="https://github.com/mascDriver/app_ru_uffs/actions/workflows/build.yml"><img src="https://github.com/mascDriver/app_ru_uffs/actions/workflows/build.yml/badge.svg" title="Status do build"></a>
+    <img src="https://img.shields.io/github/workflow/status/mascDriver/app_ru_uffs/build?label=Build&logo=github&logoColor=white&style=for-the-badge" title="Status do projeto">
 </p>
 
 # app-ru-uffs
