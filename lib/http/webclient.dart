@@ -6,4 +6,4 @@ import 'interceptors/logging_interceptor.dart';
 final Client client =
     InterceptedClient.build(interceptors: [LoggingInterceptor()]);
 
-const String baseUrl = 'zzumgq.deta.dev';
+const String baseUrl = 'api-ru-uffs.herokuapp.com';
